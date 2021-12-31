@@ -23,4 +23,5 @@
 
     <!-- LineageExt sub category -->
     <string name="secure_category_title">Security</string>
+    <string name="power_category_title">Power</string>
 </resources>
