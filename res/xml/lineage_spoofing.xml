@@ -45,4 +45,10 @@
         android:summary="@string/gphotos_spoof_summary"
         android:defaultValue="true" />
 
+    <com.lineage.support.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pihooks.games"
+        android:title="@string/games_spoof_title"
+        android:summary="@string/games_spoof_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>

@@ -46,4 +46,8 @@
     <!-- GMS Spoof -->
     <string name="gms_spoof_title">Enable GMS spoof</string>
     <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation</string>
+
+    <!-- Unlock FPS for specific games -->
+    <string name="games_spoof_title">Enable Games spoof</string>
+    <string name="games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
 </resources>
