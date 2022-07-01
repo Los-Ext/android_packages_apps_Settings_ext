@@ -16,11 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- LineageExt category -->
-    <string name="quicksettings_category_title">Quick Settings</string>
-    <string name="misc_category_title">Miscellaneous</string>
-    <string name="spoofing_category_title">Spoofing</string>
-
-    <!-- LineageExt sub category -->
-    <string name="secure_category_title">Security</string>
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">Remove screenshot and screenrecord limits for all apps. This can be convenient in some cases but may lead to privacy leaks.</string>
 </resources>
