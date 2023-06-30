@@ -25,6 +25,7 @@
     <string name="secure_category_title">Security</string>
     <string name="power_category_title">Power</string>
     <string name="brightness_slider_category_title">Brightness slider</string>
+    <string name="tiles_category_title">Tiles</string>
 
     <!-- General -->
     <string name="enable">Enable</string>
