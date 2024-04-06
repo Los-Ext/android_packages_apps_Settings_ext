@@ -42,4 +42,8 @@
     <!-- Vbmeta hash attestation -->
     <string name="vbmeta_attestation_title">Autofix VBMeta detection</string>
     <string name="vbmeta_attestation_summary">Perform key attestation to generate verified boot hash on boot. Requires system restart.</string>
+
+    <!-- GMS Spoof -->
+    <string name="gms_spoof_title">Enable GMS spoof</string>
+    <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation</string>
 </resources>
