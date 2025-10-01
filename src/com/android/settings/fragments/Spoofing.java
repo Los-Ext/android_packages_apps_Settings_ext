@@ -26,6 +26,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.settings.fragments.KeyboxDataPreference;
+import com.android.settings.fragments.PifDataPreference;
 
 import java.util.List;
 
@@ -35,9 +36,12 @@ public class Spoofing extends SettingsPreferenceFragment implements
     public static final String TAG = "Spoofing";
 
     private static final String KEYBOX_DATA_KEY = "keybox_data_setting";
+    private static final String PIF_DATA_KEY = "pif_data_setting";
 
     private ActivityResultLauncher<Intent> mKeyboxFilePickerLauncher;
+    private ActivityResultLauncher<Intent> mPifFilePickerLauncher;
     private KeyboxDataPreference mKeyboxDataPreference;
+    private PifDataPreference mPifDataPreference;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,6 +64,19 @@ public class Spoofing extends SettingsPreferenceFragment implements
                 }
             }
         );
+
+        mPifFilePickerLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            result -> {
+                if (result.getResultCode() == Activity.RESULT_OK && result.getData() != null) {
+                    Uri uri = result.getData().getData();
+                    Preference pref = findPreference(PIF_DATA_KEY);
+                    if (pref instanceof PifDataPreference) {
+                        ((PifDataPreference) pref).handleFileSelected(uri);
+                    }
+                }
+            }
+        );
     }
 
     @Override
@@ -71,8 +88,15 @@ public class Spoofing extends SettingsPreferenceFragment implements
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mKeyboxDataPreference = findPreference(KEYBOX_DATA_KEY);
+        mPifDataPreference = findPreference(PIF_DATA_KEY);
+
         if (mKeyboxDataPreference != null) {
             mKeyboxDataPreference.setFilePickerLauncher(mKeyboxFilePickerLauncher);
+        }
+
+
+        if (mPifDataPreference != null) {
+            mPifDataPreference.setFilePickerLauncher(mPifFilePickerLauncher);
         }
     }
 

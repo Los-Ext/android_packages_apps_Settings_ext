@@ -25,4 +25,10 @@
         android:summary="@string/keybox_data_summary"
         android:defaultValue=""/>
 
+    <com.android.settings.fragments.PifDataPreference
+        android:key="pif_data_setting"
+        android:title="@string/pif_data_title"
+        android:summary="@string/pif_data_summary"
+        android:defaultValue=""/>
+
 </PreferenceScreen>
