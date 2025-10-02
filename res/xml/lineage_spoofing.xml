@@ -27,4 +27,10 @@
         android:key="pif_data_setting"
         android:title="@string/pif_data_title"/>
 
+    <com.lineage.support.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pihooks.gphotos"
+        android:title="@string/gphotos_spoof_title"
+        android:summary="@string/gphotos_spoof_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
