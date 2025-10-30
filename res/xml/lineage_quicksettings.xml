@@ -19,6 +19,12 @@
     android:key="lineage_quicksettings"
     android:title="@string/quicksettings_category_title">
 
+    <com.lineage.support.preferences.SystemSettingSwitchPreference
+        android:key="qs_compact_media_player_mode"
+        android:title="@string/qs_compact_media_player_mode_title"
+        android:summary="@string/qs_compact_media_player_mode_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
          android:key="qs_brightness_slider_category"
          android:title="@string/brightness_slider_category_title">
