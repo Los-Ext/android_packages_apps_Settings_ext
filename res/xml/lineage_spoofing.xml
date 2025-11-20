@@ -28,6 +28,12 @@
         android:title="@string/pif_data_title"/>
 
     <com.lineage.support.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.vbmeta.update"
+        android:title="@string/vbmeta_attestation_title"
+        android:summary="@string/vbmeta_attestation_summary"
+        android:defaultValue="true" />
+
+    <com.lineage.support.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pihooks.gphotos"
         android:title="@string/gphotos_spoof_title"
         android:summary="@string/gphotos_spoof_summary"
