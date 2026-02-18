@@ -24,7 +24,7 @@
         android:title="@string/keybox_data_title"/>
 
     <com.lineage.support.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pihooks.pi"
+        android:key="persist.sys.ppu.pi"
         android:title="@string/gms_spoof_title"
         android:summary="@string/gms_spoof_summary"
         android:defaultValue="true" />
@@ -40,13 +40,13 @@
         android:defaultValue="true" />
 
     <com.lineage.support.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pihooks.gphotos"
+        android:key="persist.sys.ppu.gphotos"
         android:title="@string/gphotos_spoof_title"
         android:summary="@string/gphotos_spoof_summary"
         android:defaultValue="true" />
 
     <com.lineage.support.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pihooks.games"
+        android:key="persist.sys.ppu.games"
         android:title="@string/games_spoof_title"
         android:summary="@string/games_spoof_summary"
         android:defaultValue="true" />
