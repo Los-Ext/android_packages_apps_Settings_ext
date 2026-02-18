@@ -19,36 +19,4 @@
     android:key="lineage_spoofing"
     android:title="@string/spoofing_category_title">
 
-    <com.android.settings.fragments.KeyboxDataPreference
-        android:key="keybox_data_setting"
-        android:title="@string/keybox_data_title"/>
-
-    <com.lineage.support.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pihooks.pi"
-        android:title="@string/gms_spoof_title"
-        android:summary="@string/gms_spoof_summary"
-        android:defaultValue="true" />
-
-    <com.android.settings.fragments.PifDataPreference
-        android:key="pif_data_setting"
-        android:title="@string/pif_data_title"/>
-
-    <com.lineage.support.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.vbmeta.update"
-        android:title="@string/vbmeta_attestation_title"
-        android:summary="@string/vbmeta_attestation_summary"
-        android:defaultValue="true" />
-
-    <com.lineage.support.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pihooks.gphotos"
-        android:title="@string/gphotos_spoof_title"
-        android:summary="@string/gphotos_spoof_summary"
-        android:defaultValue="true" />
-
-    <com.lineage.support.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pihooks.games"
-        android:title="@string/games_spoof_title"
-        android:summary="@string/games_spoof_summary"
-        android:defaultValue="true" />
-
 </PreferenceScreen>
