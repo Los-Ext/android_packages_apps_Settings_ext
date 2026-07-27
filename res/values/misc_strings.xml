@@ -66,4 +66,7 @@
     <string name="hardware_keys_action_notifications_panel">Toggle notifications panel</string>
     <string name="hardware_keys_action_expand_qs_panel">Expand QS panel</string>
     <string name="hardware_keys_action_ringer_modes">Change ringer mode</string>
+
+    <string name="pairip_activity_block_title">Block PairIP license verification</string>
+    <string name="pairip_activity_block_summary">Prevent Play Store apps from launching the \"Get this app from Play\" screen when not installed by the Play Store</string>
 </resources>
